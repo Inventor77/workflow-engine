@@ -4,7 +4,7 @@ export class Header extends Component {
 	render() {
 		const openSlider = () => {
 			const Slider = document.getElementById("sidebar-wrapper");
-			Slider.style.width = "500px";
+			Slider.style.width = "550px";
 		};
 		return (
 			<nav

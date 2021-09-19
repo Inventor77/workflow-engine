@@ -13,7 +13,10 @@ export class SliderWindow extends Component {
 				id="sidebar-wrapper"
 				role="navigation"
 			>
-				<ul className="sidebar-nav" style={{ backgroundColor: "#22273f86" }}>
+				<ul
+					className="sidebar-nav"
+					style={{ backgroundColor: "#22273f86", overflow: "auto" }}
+				>
 					<div className="sidebar-header">
 						<div className="sidebar-brand">
 							<h4>Create Action</h4>
@@ -51,6 +54,7 @@ export class SliderWindow extends Component {
 												type="email"
 												className="form-control"
 												id="EmailTo"
+												placeholder={"name@gmail.com"}
 											></input>
 										</div>
 									</div>
@@ -63,6 +67,7 @@ export class SliderWindow extends Component {
 												type="email"
 												className="form-control"
 												id="EmailFrom"
+												placeholder={"your-name@gmail.com"}
 											></input>
 										</div>
 									</div>
@@ -77,22 +82,21 @@ export class SliderWindow extends Component {
 										<div className="col-sm-10">
 											<textarea
 												className="col-sm-12 p-2"
-												rows="3"
+												rows="2"
 												style={{ borderRadius: "4px" }}
-												placeholder="Fill me OniChan"
 											></textarea>
 										</div>
 									</div>
 									<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 										<button
 											type="button"
-											className="btn btn-info px-5 my-3 mx-2"
+											className="btn btn-info px-5 my-1 mx-2"
 										>
 											<b>Edit</b>
 										</button>
 										<button
 											type="button"
-											className="btn btn-danger px-5 my-3 mx-2"
+											className="btn btn-danger px-5 my-1 mx-2"
 										>
 											<b>Send</b>
 										</button>
@@ -113,12 +117,47 @@ export class SliderWindow extends Component {
 								Meeting
 							</h5>
 						</p>
-
 						<div className="collapse multi-collapse" id="Collapse2">
 							<div className="card-body">
-								Some placeholder content for the first collapse component of
-								this multi-collapse example. This panel is hidden by default but
-								revealed when the user activates the relevant trigger.
+								<form>
+									<div className="row mb-3">
+										<label for="EmailTo" className="col-sm-2 col-form-label">
+											Emails
+										</label>
+										<div className="col-sm-10">
+											<input
+												type="email"
+												className="form-control"
+												id="EmailTo"
+												placeholder={"name@gmail.com"}
+											></input>
+										</div>
+									</div>
+									<div className="row mb-3">
+										<label className="col-sm-2 col-form-label">Place</label>
+										<div className="col-sm-10">
+											<input
+												type="text"
+												className="form-control"
+												placeholder={"Assembly Hall"}
+											></input>
+										</div>
+									</div>
+									<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+										<button
+											type="button"
+											className="btn btn-info px-5 my-0 mx-2"
+										>
+											<b>Edit</b>
+										</button>
+										<button
+											type="button"
+											className="btn btn-danger px-5 my-0 mx-2"
+										>
+											<b>Send</b>
+										</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</li>
@@ -136,9 +175,44 @@ export class SliderWindow extends Component {
 						</p>
 						<div className="collapse multi-collapse" id="Collapse3">
 							<div className="card-body">
-								Some placeholder content for the first collapse component of
-								this multi-collapse example. This panel is hidden by default but
-								revealed when the user activates the relevant trigger.
+								<form>
+									<div className="row mb-3">
+										<label for="EmailTo" className="col-sm-2 col-form-label">
+											Emails
+										</label>
+										<div className="col-sm-10">
+											<input
+												type="email"
+												className="form-control"
+												id="EmailTo"
+											></input>
+										</div>
+									</div>
+									<div className="row mb-3">
+										<label className="col-sm-2 col-form-label">Body</label>
+										<div className="col-sm-10">
+											<textarea
+												className="col-sm-12 p-2"
+												rows="2"
+												style={{ borderRadius: "4px" }}
+											></textarea>
+										</div>
+									</div>
+									<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+										<button
+											type="button"
+											className="btn btn-info px-5 my-0 mx-2"
+										>
+											<b>Edit</b>
+										</button>
+										<button
+											type="button"
+											className="btn btn-danger px-5 my-0 mx-2"
+										>
+											<b>Send</b>
+										</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</li>

@@ -1,0 +1,109 @@
+.sidebar-nav {
+	position: absolute;
+	top: 0px;
+	width: 500px;
+	height: calc(100vh - 60px);
+	right: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	position: relative;
+	line-height: 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+.sidebar-nav li:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	height: 100%;
+	width: 5px;
+	background-color: #119473;
+	-webkit-transition: width 0.2s ease-in;
+	-moz-transition: width 0.2s ease-in;
+	-ms-transition: width 0.2s ease-in;
+	transition: width 0.2s ease-in;
+}
+.sidebar-nav li:hover {
+	background: #11d4c1 !important;
+	border-radius: 18px 0 0 18px;
+	padding-left: 20px;
+}
+.sidebar-nav li:hover h5 {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+	width: 100%;
+	-webkit-transition: width 0.2s ease-in;
+	-moz-transition: width 0.2s ease-in;
+	-ms-transition: width 0.2s ease-in;
+	transition: width 0.2s ease-in;
+}
+
+.sidebar-nav li a {
+	display: block;
+	color: #ddd;
+	text-decoration: none;
+	padding: 10px 15px 10px 30px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus {
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+}
+.sidebar-header {
+	font-size: 20px;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+.sidebar-brand {
+	height: 65px;
+	position: relative;
+	background: #212531;
+	padding-top: 1em;
+	margin-bottom: 2rem;
+	background: linear-gradient(to right bottom, #2f3c5e 47%, #1a274e 53%);
+}
+.sidebar-brand h4 {
+	color: #ddd;
+	padding-left: 20px;
+	cursor: pointer;
+	width: fit-content;
+}
+.sidebar-brand h4:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.sidebar-close {
+	position: absolute;
+	right: 16px;
+	top: 20px;
+	height: 24px;
+	width: 24px;
+}
+.sidebar-close i {
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #ddd;
+}
+.sidebar-close i:hover {
+	font-size: 1.65rem;
+	cursor: pointer;
+	color: #fff;
+}

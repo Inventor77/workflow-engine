@@ -2,10 +2,14 @@ import React, { Component } from "react";
 
 export class Header extends Component {
 	render() {
+		const openSlider = () => {
+			const Slider = document.getElementById("sidebar-wrapper");
+			Slider.style.width = "500px";
+		};
 		return (
 			<nav
 				className="navbar navbar-expand-lg navbar-light py-2 px-5"
-				style={{ backgroundColor: "#74baec" }}
+				style={{ backgroundColor: "#89cff0" }}
 			>
 				<a className="navbar-brand">
 					<b>WorkFlow-Engine</b>
@@ -26,7 +30,13 @@ export class Header extends Component {
 					<div className="my-lg-0" style={{ width: "74vw" }}></div>
 					<ul className="navbar-nav ">
 						<li className="nav-item">
-							<button className="btn btn-secondary py-1 my-1" type="button">
+							<button
+								className="btn btn-secondary py-1 my-1"
+								type="button"
+								onClick={() => {
+									openSlider();
+								}}
+							>
 								<b>Create Action</b>
 								<i class="fas fa-plus mx-2"></i>
 							</button>

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 
 import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
+import SliderWindow from "./components/SliderWindow";
 
 class App extends Component {
 	render() {
@@ -11,6 +12,7 @@ class App extends Component {
 				<div className="container">
 					<Dashboard />
 				</div>
+				<SliderWindow />
 			</Fragment>
 		);
 	}

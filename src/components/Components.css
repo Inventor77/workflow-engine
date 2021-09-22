@@ -21,7 +21,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -2;
+	z-index: 2;
 	height: 100%;
 	width: 5px;
 	background-color: #119473;
@@ -30,40 +30,23 @@
 	-ms-transition: width 0.2s ease-in;
 	transition: width 0.2s ease-in;
 }
-.sidebar-nav li:hover {
+.sidebar-nav p:hover {
 	background: #11d4c1 !important;
 	border-radius: 18px 0 0 18px;
 	padding-left: 20px;
 }
-.sidebar-nav li:hover h5 {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-}
-.sidebar-nav li:hover:before,
-.sidebar-nav li.open:hover:before {
-	width: 100%;
-	-webkit-transition: width 0.2s ease-in;
-	-moz-transition: width 0.2s ease-in;
-	-ms-transition: width 0.2s ease-in;
-	transition: width 0.2s ease-in;
-}
 
-.sidebar-nav li a {
+.sidebar-nav li h5 {
 	display: block;
 	color: #ddd;
 	text-decoration: none;
-	padding: 10px 15px 10px 30px;
+	padding: 5px 5px 10px 30px;
 }
 
-.sidebar-nav li a:hover,
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus,
-.sidebar-nav li.open a:hover,
-.sidebar-nav li.open a:active,
-.sidebar-nav li.open a:focus {
+.sidebar-nav li h5:hover {
 	color: #fff;
-	text-decoration: none;
-	background-color: transparent;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 .sidebar-header {
 	font-size: 20px;
@@ -81,13 +64,12 @@
 }
 .sidebar-brand h4 {
 	color: #ddd;
-	padding-left: 20px;
+	padding-left: 24px;
 	cursor: pointer;
 	width: fit-content;
 }
 .sidebar-brand h4:hover {
 	color: #fff;
-	text-decoration: none;
 }
 
 .sidebar-close {
@@ -106,4 +88,16 @@
 	font-size: 1.65rem;
 	cursor: pointer;
 	color: #fff;
+}
+
+textarea {
+	width: auto;
+	min-width: 1em;
+	grid-area: 1 / 2;
+	padding: 0.25em;
+	margin: 0;
+	resize: none;
+	appearance: none;
+	border: none;
+	outline: none;
 }

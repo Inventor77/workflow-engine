@@ -36,6 +36,10 @@ export class Header extends Component {
 								onClick={() => {
 									openSlider();
 								}}
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseWidthExample"
+								aria-expanded="false"
+								aria-controls="collapseWidthExample"
 							>
 								<b>Create Action</b>
 								<i class="fas fa-plus mx-2"></i>
